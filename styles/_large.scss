@@ -1,0 +1,32 @@
+@import './variables';
+
+header {
+    background: url('../images/bp1.jpg') no-repeat;
+    background-position: 50% 66%;
+}
+.header-body {
+    div {
+        width: 60rem;
+    }
+}
+
+.nav-body {
+    width: 60rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-body {
+    width: 60rem;
+}
+.content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+.topic {
+    grid-column: span 1;
+}

@@ -1,0 +1,28 @@
+@import './variables';
+
+header {
+    background: url('../images/bp1.jpg') no-repeat;
+    background-position: 0% 0%;
+}
+
+.nav-body {
+    justify-content: flex-start;
+    a {
+        width: 10%;
+    }
+    hr {
+        height: 70%;
+    }
+}
+
+.content {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+}
+.topic {
+    grid-column: span 1;
+}

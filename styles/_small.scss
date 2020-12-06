@@ -1,0 +1,141 @@
+@import './variables';
+
+/* Prevent adjustments of font size when orientation changes  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/bp1.jpg') no-repeat;
+    background-size: auto;
+    background-position: 8% 0%;
+    background-attachment: fixed;
+}
+.header-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    div {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        h1 {
+            font-family: $font;
+            color: white;
+            margin: 0 0 5px 0px;
+        }
+        p {
+            font-family: $font;
+            font-size: 1.2rem;
+            color: white;
+            margin: 0 0 10px 0px;
+        }
+    }
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $prime;
+}
+.nav-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        width: 24.5%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-family: $font;
+    }
+    hr {
+        width: 2px;
+        height: 100%;
+        background: white;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+#active {
+    background: $second;
+}
+
+main {
+    width: 95vw;
+    margin-bottom: 50px;
+    h1 {
+        font-family: $font;
+    }
+}
+.topic {
+    h2 {
+        margin: 0;
+        margin-bottom: 5px;
+        font-family: $font;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 25px;
+        font-family: $font;
+    }
+}
+
+footer {
+    width: 100vw;
+    height: 40px;
+    background: $prime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-family: $font;
+        color: white;
+        margin: 0;
+    }
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
